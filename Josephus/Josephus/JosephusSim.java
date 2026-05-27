@@ -36,6 +36,10 @@ public class JosephusSim {
    
    public void eliminate() {
       // count to the elimination count
+      for (int i = 1; i < eliminationCount; i++) {
+         track = track.next;
+      }
+
       
       // print who will be eliminated
       
