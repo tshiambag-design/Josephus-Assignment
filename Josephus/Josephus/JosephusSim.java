@@ -45,7 +45,8 @@ public class JosephusSim {
    
    public boolean isOver() {
       // check if there's only one person left in the circle
-      return false;
+      return circle.next == circle;
+   
    }
    
    public String toString() {
