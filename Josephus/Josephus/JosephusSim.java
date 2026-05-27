@@ -50,7 +50,12 @@ public class JosephusSim {
    
    public String toString() {
       // if there's only one person left, print them as the last survivor
-      
+      PersonNode survivor = circle;
+      while(survivor.next != circle) {
+         survivor = survivor.next;
+      }
+      System.out.println(survivor.name);
+
       // print the remaining survivors (watch out for infinite loop since list is circular)
 
       return "";
