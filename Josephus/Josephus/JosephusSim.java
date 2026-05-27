@@ -42,7 +42,9 @@ public class JosephusSim {
 
       
       // print who will be eliminated
-      
+      PersonNode eliminatedP = track.next;
+      System.out.println(eliminatedP);
+
       // eliminate the person and update "front" of the circle and size
 
    }
