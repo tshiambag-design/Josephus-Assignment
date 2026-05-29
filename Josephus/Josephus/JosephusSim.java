@@ -1,3 +1,4 @@
+
 import java.util.*;
 import java.io.*;
 
@@ -28,8 +29,8 @@ public class JosephusSim {
             track = curr;         // track starts at last node
          }
 
-         // generate random elimination count
-         eliminationCount = (int)(Math.random() * size) + 1;
+         // generate random elimination count (rubric: 1 to size/2)
+         eliminationCount = (int)(Math.random() * (size / 2)) + 1;
 
          System.out.println("=== Elimination count is " + eliminationCount + " ===");
          System.out.println("Remaining survivors: " + this);
@@ -117,53 +118,64 @@ public class JosephusSim {
 }
 
 /*
+
  ----jGRASP exec: java JosephusDriver
- === Elimination count is 5 ===
+ === Elimination count is 4 ===
  Remaining survivors: 1-Muhammad, 2-Beza, 3-Ibrar, 4-Nur, 5-Krystal, 6-River, 7-Soham, 8-Leon, 9-Will, 10-Qiao
  1-Muhammad, 2-Beza, 3-Ibrar, 4-Nur, 5-Krystal, 6-River, 7-Soham, 8-Leon, 9-Will, 10-Qiao
  
  Continue elimination? <press enter>
  
- Krystal eliminated!
- Remaining survivors: 1-Muhammad, 2-Beza, 3-Ibrar, 4-Nur, 5-River, 6-Soham, 7-Leon, 8-Will, 9-Qiao
- 1-Muhammad, 2-Beza, 3-Ibrar, 4-Nur, 5-River, 6-Soham, 7-Leon, 8-Will, 9-Qiao
- 
- Continue elimination? <press enter>
- 
- Qiao eliminated!
- Remaining survivors: 1-Muhammad, 2-Beza, 3-Ibrar, 4-Nur, 5-River, 6-Soham, 7-Leon, 8-Will
- 1-Muhammad, 2-Beza, 3-Ibrar, 4-Nur, 5-River, 6-Soham, 7-Leon, 8-Will
- 
- Continue elimination? <press enter>
- 
- River eliminated!
- Remaining survivors: 1-Muhammad, 2-Beza, 3-Ibrar, 4-Nur, 5-Soham, 6-Leon, 7-Will
- 1-Muhammad, 2-Beza, 3-Ibrar, 4-Nur, 5-Soham, 6-Leon, 7-Will
- 
- Continue elimination? <press enter>
- 
- Beza eliminated!
- Remaining survivors: 1-Muhammad, 2-Ibrar, 3-Nur, 4-Soham, 5-Leon, 6-Will
- 1-Muhammad, 2-Ibrar, 3-Nur, 4-Soham, 5-Leon, 6-Will
- 
- Continue elimination? <press enter>
- 
- Will eliminated!
- Remaining survivors: 1-Muhammad, 2-Ibrar, 3-Nur, 4-Soham, 5-Leon
- 1-Muhammad, 2-Ibrar, 3-Nur, 4-Soham, 5-Leon
+ Nur eliminated!
+ Remaining survivors: 1-Muhammad, 2-Beza, 3-Ibrar, 4-Krystal, 5-River, 6-Soham, 7-Leon, 8-Will, 9-Qiao
+ 1-Muhammad, 2-Beza, 3-Ibrar, 4-Krystal, 5-River, 6-Soham, 7-Leon, 8-Will, 9-Qiao
  
  Continue elimination? <press enter>
  
  Leon eliminated!
- Remaining survivors: 1-Muhammad, 2-Ibrar, 3-Nur, 4-Soham
- 1-Muhammad, 2-Ibrar, 3-Nur, 4-Soham
+ Remaining survivors: 1-Muhammad, 2-Beza, 3-Ibrar, 4-Krystal, 5-River, 6-Soham, 7-Will, 8-Qiao
+ 1-Muhammad, 2-Beza, 3-Ibrar, 4-Krystal, 5-River, 6-Soham, 7-Will, 8-Qiao
+ 
+ Continue elimination? <press enter>
+ 
+ Beza eliminated!
+ Remaining survivors: 1-Muhammad, 2-Ibrar, 3-Krystal, 4-River, 5-Soham, 6-Will, 7-Qiao
+ 1-Muhammad, 2-Ibrar, 3-Krystal, 4-River, 5-Soham, 6-Will, 7-Qiao
+ 
+ Continue elimination? <press enter>
+ 
+ Soham eliminated!
+ Remaining survivors: 1-Muhammad, 2-Ibrar, 3-Krystal, 4-River, 5-Will, 6-Qiao
+ 1-Muhammad, 2-Ibrar, 3-Krystal, 4-River, 5-Will, 6-Qiao
+ 
+ Continue elimination? <press enter>
+ 
+ Ibrar eliminated!
+ Remaining survivors: 1-Muhammad, 2-Krystal, 3-River, 4-Will, 5-Qiao
+ 1-Muhammad, 2-Krystal, 3-River, 4-Will, 5-Qiao
+ 
+ Continue elimination? <press enter>
+ 
+ Qiao eliminated!
+ Remaining survivors: 1-Muhammad, 2-Krystal, 3-River, 4-Will
+ 1-Muhammad, 2-Krystal, 3-River, 4-Will
+ 
+ Continue elimination? <press enter>
+ 
+ Will eliminated!
+ Remaining survivors: 1-Muhammad, 2-Krystal, 3-River
+ 1-Muhammad, 2-Krystal, 3-River
  
  Continue elimination? <press enter>
  
  Muhammad eliminated!
- Remaining survivors: 1-Ibrar, 2-Nur, 3-Soham
- 1-Ibrar, 2-Nur, 3-Soham
+ Remaining survivors: 1-Krystal, 2-River
+ 1-Krystal, 2-River
  
  Continue elimination? <press enter>
  
-*/
+ River eliminated!
+ 1-Krystal
+ 
+  ----jGRASP: Operation complete.*/
+ 
